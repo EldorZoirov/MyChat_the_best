@@ -1,0 +1,52 @@
+@(message: String)
+
+@main("My Profil") {
+
+  @navbar("profil")
+
+
+  <div class="container" style="padding-top: 40px">
+    <div class="h3 text-uppercase text-center"><b>build</b> your profile</div>
+    <div class="text-center help-block">This information will let us know more about you.</div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="row navbar" role="navigation">
+          <ul class="nav nav-tabs">
+            <li class="col-xs-4 active">
+              <a href="#">About</a>
+            </li>
+            <li class="col-xs-4">
+              <a href="#">Account</a>
+            </li>
+            <li class="col-xs-3">
+              <a href="#">Address</a>
+            </li>
+          </ul>
+        </div>
+        <div class="h3 text-center">Let's start with the basic information</div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-5">
+            <img class="img-responsive" src="@routes.Assets.at("images/images/default-avatar.png")">
+            <br/>
+            <button class="btn btn-default">Choose File</button>
+            <b> No file chosen</b>
+          </div>
+          <div class="col-xs-7">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="input1"><b>First Name</b>
+                  <div class="input-group">
+                    <input class="form-control" type="email" placeholder="Adrew..." id="input1" style="border-radius: 3px">
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+}

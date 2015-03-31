@@ -1,0 +1,40 @@
+@(talks: List[Chat])
+
+@main("Users list") {
+
+  @navbar("list")
+
+  <div class="container main-content">
+
+    <h1 class="text-center">MyChat.com saytimizga hush kelibsiz!!!</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Email</th>
+          <th>Login</th>
+          <th>Parol</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      @for(i <- talks) {
+        <tr>
+          <td>@i.name</td>
+          <td>@i.surname</td>
+          <td>@i.email</td>
+          <td>@i.login</td>
+          <td>@i.parol</td>
+          <td>
+            <a href="@routes.Malumot.remove(i.id.get)">
+              <button class="btn btn-danger">Delete</button>
+            </a>
+          </td>
+        </tr>
+      }
+      </tbody>
+    </table>
+  </div>
+
+}
