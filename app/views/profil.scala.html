@@ -2,51 +2,97 @@
 
 @main("My Profil") {
 
-  @navbar("profil")
-
-
-  <div class="container" style="padding-top: 40px">
+    @navbar("profil")
+    @* <div class="container" style="padding-top: 40px">
     <div class="h3 text-uppercase text-center"><b>build</b> your profile</div>
     <div class="text-center help-block">This information will let us know more about you.</div>
     <div class="row">
-      <div class="col-xs-8 col-xs-offset-2">
-        <div class="row navbar" role="navigation">
-          <ul class="nav nav-tabs">
-            <li class="col-xs-4 active">
-              <a href="#">About</a>
-            </li>
-            <li class="col-xs-4">
-              <a href="#">Account</a>
-            </li>
-            <li class="col-xs-3">
-              <a href="#">Address</a>
-            </li>
-          </ul>
-        </div>
-        <div class="h3 text-center">Let's start with the basic information</div>
-        <br/>
-        <div class="row">
-          <div class="col-xs-5">
-            <img class="img-responsive" src="@routes.Assets.at("images/images/default-avatar.png")">
-            <br/>
-            <button class="btn btn-default">Choose File</button>
-            <b> No file chosen</b>
-          </div>
-          <div class="col-xs-7">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="input1"><b>First Name</b>
-                  <div class="input-group">
-                    <input class="form-control" type="email" placeholder="Adrew..." id="input1" style="border-radius: 3px">
-                  </div>
-                </label>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div class="col-xs-8 col-xs-offset-2">
+    <div class="row navbar" role="navigation">
+    <ul class="nav nav-tabs">
+    <li class="col-xs-4 active">
+    <a href="#">About</a>
+    </li>
+    <li class="col-xs-4">
+    <a href="#">Account</a>
+    </li>
+    <li class="col-xs-3">
+    <a href="#">Address</a>
+    </li>
+    </ul>
     </div>
-  </div>
+    <div class="h3 text-center">Let's start with the basic information</div>
+    <br/>
+    <div class="row">
+    <div class="col-xs-5">
+    <img class="img-responsive" src="@routes.Assets.at("images/images/default-avatar.png")">
+    <br/>
+    <button class="btn btn-default">Choose File</button>
+    <b> No file chosen</b>
+    </div>
+    <div class="col-xs-7">
+    <form class="form-horizontal">
+    <div class="form-group">
+    <label for="input1"><b>First Name</b>
+    <div class="input-group">
+    <input class="form-control" type="email" placeholder="Adrew..." id="input1" style="border-radius: 3px">
+    </div>
+    </label>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>*@
+    <div class="container" style="padding-top : 100px">
 
+
+        <div id="sliderFrame">
+            <div id="slider">
+                <a href="http://www.menucool.com/">
+                    <img src="@routes.Assets.at("images1/image-slider-1.jpg")" alt="Welcome to Menucool.com" />
+                </a>
+                <a class="lazyImage" href="@routes.Assets.at("images1/image-slider-2.jpg")" title="Customizable Transition Effects">
+                    Customizable Transition Effects</a>
+                <a href="http://www.menucool.com/javascript-image-slider">
+                    <b data-src="@routes.Assets.at("images1/image-slider-3.jpg")" data-alt="#htmlcaption3">Image Slider</b>
+                </a>
+                <a class="lazyImage img-responsive" href="@routes.Assets.at("images1/image-slider-4.jpg")" title="Pure Javascript. No jQuery. No flash.">
+                    Plain Javascript Slider</a>
+                <a class="lazyImage" href="@routes.Assets.at("images1/image-slider-5.jpg")" title="#htmlcaption5">
+                    Lazy Loading Image</a>
+                <a class="lazyImage" href="@routes.Assets.at("images1/image-slider-1.jpg")" title="Light weight Image Slider">
+                    Light weight Image Slider</a>
+                <a class="lazyImage" href="@routes.Assets.at("images1/image-slider-2.jpg")" title="Fine tuned. Sleek & Smooth">
+                    Fine tuned. Sleek & Smooth</a>
+                <a class="lazyImage" href="@routes.Assets.at("images1/image-slider-3.jpg")" title="Easy-to-Use Slider">
+                    Easy-to-Use Slider</a>
+            </div>
+            <div style="display : none ;">
+                <div id="htmlcaption3">
+                    <em>HTML</em> caption. Back to <a href="http://www.menucool.com/">Menucool</a>.
+                </div>
+                <div id="htmlcaption5">
+                    Smart Lazy Loading Image
+                </div>
+            </div>
+
+                <!--thumbnails-->
+            <div id="thumbs">
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb1.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb2.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb3.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb4.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb5.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb1.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb2.jpg")" /></div>
+                <div class="thumb"><img src="@routes.Assets.at("images1/thumb3.jpg")" /></div>
+
+            </div>
+        </div>
+
+
+    </div>
 
 }
